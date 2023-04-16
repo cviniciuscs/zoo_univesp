@@ -1,9 +1,9 @@
 from django import forms
-from apps.galeria.models import Fotografia
+from apps.biblioteca.models import Livro
 
 class FotografiaForms(forms.ModelForm):
     class Meta:
-        model = Fotografia
+        model = Livro
         exclude = ['publicada',]
         labels = {
             "descricao": 'Descrição',

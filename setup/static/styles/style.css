@@ -150,17 +150,17 @@ table {
 }
 
 .card__tag {
-    background-color: #D9D9D940;
+    background-color: #d9d9d9;
     border-radius: 8px;
     border: 2px solid transparent;
     font-size: 1.2rem;
-    left: 310px;
+    left: 260px;
     margin-right: 1.5rem;
-    padding: .5rem .5rem;
+    padding: 0.5rem 0.5rem;
     position: absolute;
     text-align: center;
-    top: 20px;
-    width: 100px;
+    top: 10px;
+    width: 160px;
 }
 
 .card__info {
@@ -373,7 +373,7 @@ table {
     margin-right: 1.5rem;
     border-radius: 8px;
     padding: .8rem .5rem;
-    width: 100px;
+    width: 150px;
     text-align: center;
     border: 2px solid transparent;
 }

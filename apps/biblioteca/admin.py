@@ -1,7 +1,7 @@
 from django.contrib import admin
-from apps.galeria.models import Fotografia
+from apps.biblioteca.models import Livro
 
-class ListandoFotografias(admin.ModelAdmin):
+class ListandoLivros(admin.ModelAdmin):
     list_display = ('id', 'nome', 'legenda', 'categoria', 'publicada')
     list_display_links = ('id', 'nome')
     search_fields = ('nome','id')
@@ -10,4 +10,4 @@ class ListandoFotografias(admin.ModelAdmin):
     list_per_page = 10
     
     
-admin.site.register(Fotografia, ListandoFotografias)
+admin.site.register(Livro, ListandoLivros)
