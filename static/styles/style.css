@@ -65,12 +65,22 @@ table {
 }
 
 .banner__titulo {
-    color: #020114;
+    color: #FFFFFF;
     font-size: 40px;
     width: 350px;
     line-height: 50px;
     position: absolute;
     top: 80px;
+    left: 80px;
+}
+
+.banner__subtitulo {
+    color: #FFFFFF;
+    font-size: 25px;
+    width: 900px;
+    line-height: 50px;
+    position: absolute;
+    top: 120px;
     left: 80px;
 }
 
