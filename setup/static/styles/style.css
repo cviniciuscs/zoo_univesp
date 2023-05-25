@@ -219,8 +219,8 @@ table {
 }
 
 .imagem__imagem {
-    width: 100%;
-    border-radius: 20px;
+    width: 25%;
+    border-radius: 10px;
 }
 
 .imagem__info {
