@@ -12,6 +12,6 @@ class CustumUserAdmin(UserAdmin):
         form =  super().get_form(request, obj, **kwargs)
 
         if not request.user.is_superuser:
-            # form.base_fields["is_superuser"].readonly = True
+            #form.base_fields["is_superuser"].disabled = True
             pass
         return form
