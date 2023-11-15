@@ -14,9 +14,46 @@
 </head>
 
 <body>
-    {% include 'partials/_menu.html' %}
-    {% block content %}{% endblock %}
-    {% include 'partials/_footer.html' %}
+    
+    <div class="zoom-buttons">
+        <button onclick="zoomIn()">A +</button>
+        <button onclick="zoomOut()">A -</button>
+        <button onclick="resetZoom()">Modo Normal</button>
+    </div>
+    
+    <script src="script.js"></script>
+    
+    <script>
+    const zoomContainer = document.querySelector('.zoom-container');
+    let scaleValue = 1;
+    
+    function zoomIn() {
+        scaleValue += 0.1;
+        applyZoom();
+    }
+    
+    function zoomOut() {
+        scaleValue -= 0.1;
+        applyZoom();
+    }
+    
+    function resetZoom() {
+        scaleValue = 1;
+        applyZoom();
+    }
+    
+    function applyZoom() {
+        // Limit the scale value to a reasonable range
+        scaleValue = Math.max(0.5, Math.min(scaleValue, 3));
+    
+        // Apply the scale transformation
+        zoomContainer.style.transform = `scale(${scaleValue})`;
+    }
+    </script>
+
+{% include 'partials/_menu.html' %}
+{% block content %}{% endblock %}
+{% include 'partials/_footer.html' %}
 </body>
 
 </html>

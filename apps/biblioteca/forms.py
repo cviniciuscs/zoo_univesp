@@ -11,7 +11,7 @@ class FotografiaForms(forms.ModelForm):
             'usuario': "Usuário",
             }
         widgets = {
-            "nome": forms.TextInput(attrs={"class": "form-control"}),
+            "animal": forms.TextInput(attrs={"class": "form-control"}),
             "autor": forms.TextInput(attrs={"class": "form-control"}),
             "legenda": forms.TextInput(attrs={"class": "form-control"}),
             "categoria": forms.Select(attrs={"class": "form-control"}),

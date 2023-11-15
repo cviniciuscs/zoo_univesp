@@ -11,7 +11,7 @@ class Livro(models.Model):
         ("AUTOBIOGRAFIA", "Autobiografia"),
         ]
 
-    nome = models.CharField(max_length=100, null=False, blank=False)
+    animal = models.CharField(max_length=100, null=False, blank=False)
     autor = models.CharField(max_length=100, null=False, blank=False, default=None)
     legenda = models.CharField(max_length=150, null=False, blank=False)
     categoria = models.CharField(max_length=100, choices=OPCAO_CATEGORIA, default="")
