@@ -4,8 +4,8 @@
             <section class="conteudo">
                 <section class="banner">
                     <img class="banner__imagem" src="{% static 'assets/imagens/Banner.png' %}" alt="banner Alura Space">
-                    <h1 class="banner__titulo"> LibraSystem</h1>
-                    <h2 class="banner__subtitulo"> Catálogo de animais do Zoológioco Municipal de Limeira</h2>
+                    <h1 class="banner__titulo"> Zoológico Municipal</h1>
+                    <h2 class="banner__subtitulo"> Catálogo de animais do Zoológico Municipal</h2>
                 </section>
                 <section class="tags">
                     <p class="tags__titulo">Busque por tags:</p>
@@ -18,7 +18,7 @@
                 </section>
                 <section class="galeria">
                     <div class="cards">
-                        <h2 class="cards__titulo">Navegue pelos livros</h2>
+                        <h2 class="cards__titulo">Navegue pelos animais</h2>
                         <ul class="cards__lista">
                             {% if cards %}
                             {% for fotografia in cards %}
@@ -32,7 +32,7 @@
                                 </a>
                                 <span class="card__tag">{{fotografia.classe}}</span>
                                 <div class="card__info">
-                                    <p class="card__titulo">{{fotografia.nome}}</p>
+                                    <p class="card__titulo">{{fotografia.nome_popular}}</p>
                                     <div class="card__texto">
                                         <p class="card__descricao">{{fotografia.especie}}</p>
                                         <!--<span>
