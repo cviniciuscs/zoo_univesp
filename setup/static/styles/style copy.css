@@ -3,7 +3,7 @@
    License: none (public domain)
 */
 
-/* Style atual 
+/* Style copia
 */
 
 
@@ -68,17 +68,17 @@ table {
 }
 
 .banner__titulo {
-    color: #d20000;
-    font-size: 45px;
-    width:900px;
-    line-height: 10px;
+    color: #ff1414;
+    font-size: 40px;
+    width: 350px;
+    line-height: 50px;
     position: absolute;
     top: 80px;
     left: 80px;
 }
 
 .banner__subtitulo {
-    color: #000000;
+    color: #ffffff;
     font-size: 25px;
     width: 900px;
     line-height: 50px;
@@ -317,7 +317,7 @@ table {
     width: 100%;
     height: 50px;
     border-radius: 10px;
-    background: #ffffff;
+    background: #007bff;
     padding: 2px;
     box-sizing: border-box;
 }
@@ -352,7 +352,7 @@ table {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    color: #a90000;
+    color: #c10404;
 }
 
 .rodape__icones {
@@ -370,11 +370,11 @@ table {
     display: flex;
     align-items: center;
     color: #0176d2;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .tags__titulo {
-    margin-right: 3em;
+    margin-right: 4rem;
 }
 
 .tags__lista {
@@ -382,7 +382,7 @@ table {
 }
 
 .tags__tag {
-    background-color: #0176d2c7;
+    background-color: #0176d2cf;
     margin-right: 1.5rem;
     border-radius: 8px;
     padding: .8rem .5rem;
