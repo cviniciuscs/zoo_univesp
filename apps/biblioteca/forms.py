@@ -6,16 +6,17 @@ class FotografiaForms(forms.ModelForm):
         model = Livro
         exclude = ['publicada',]
         labels = {
-            "descricao": 'Descrição',
+            "observação": 'Observação',
             'data_fotografia': "Data de Registro",
             'usuario': "Usuário",
             }
         widgets = {
-            "animal": forms.TextInput(attrs={"class": "form-control"}),
-            "autor": forms.TextInput(attrs={"class": "form-control"}),
-            "legenda": forms.TextInput(attrs={"class": "form-control"}),
-            "categoria": forms.Select(attrs={"class": "form-control"}),
-            "descricao": forms.Textarea(attrs={"class": "form-control"}),
+            "nome": forms.TextInput(attrs={"class": "form-control"}),
+            "especie": forms.TextInput(attrs={"class": "form-control"}),
+            "nome_popular": forms.TextInput(attrs={"class": "form-control"}),
+            "classe": forms.Select(attrs={"class": "form-control"}),
+            "Observação": forms.Textarea(attrs={"class": "form-control"}),
+            "sexo": forms.Select(attrs={"class": "form-control"}),
             "foto": forms.FileInput(attrs={"class": "form-control"}),
             "usuario": forms.Select(attrs={"class": "form-control"}),
             "data_fotografia": forms.DateInput(

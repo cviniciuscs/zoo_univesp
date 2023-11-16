@@ -10,10 +10,10 @@
                 <section class="tags">
                     <p class="tags__titulo">Busque por tags:</p>
                     <ul class="tags__lista">
-                        <li class="tags__tag"><a href="{% url 'filtro' 'LITERATURA INFANTIL' %}"   class="btn" style="color: #C9C9C9;">Literatura Infantil</a></li>
-                        <li class="tags__tag"><a href="{% url 'filtro' 'LITERATURA JUVENIL' %}"   class="btn" style="color: #C9C9C9;">Literatura Juvenil</a></li>
-                        <li class="tags__tag"><a href="{% url 'filtro' 'FICÇÃO' %}"   class="btn" style="color: #C9C9C9;">Ficção</a></li>
-                        <li class="tags__tag"><a href="{% url 'filtro' 'AUTOBIOGRAFIA' %}"   class="btn" style="color: #C9C9C9;">Autobiografia</a></li>
+                        <li class="tags__tag"><a href="{% url 'filtro' 'AVE' %}"   class="btn" style="color: #C9C9C9;">Ave</a></li>
+                        <li class="tags__tag"><a href="{% url 'filtro' 'MAMÍFERO' %}"   class="btn" style="color: #C9C9C9;">Mamífero</a></li>
+                        <li class="tags__tag"><a href="{% url 'filtro' 'RÉPTIL' %}"   class="btn" style="color: #C9C9C9;">Réptil</a></li>
+                        <li class="tags__tag"><a href="{% url 'filtro' 'ANFÍBIO' %}"   class="btn" style="color: #C9C9C9;">Anfíbio</a></li>
                     </ul>
                 </section>
                 <section class="galeria">
@@ -30,11 +30,11 @@
                                     <img class="card__imagem" src="{{ fotografia.foto.url }}" alt="foto">
                                 {% endif %}
                                 </a>
-                                <span class="card__tag">{{fotografia.categoria}}</span>
+                                <span class="card__tag">{{fotografia.classe}}</span>
                                 <div class="card__info">
-                                    <p class="card__titulo">{{fotografia.animal}}</p>
+                                    <p class="card__titulo">{{fotografia.nome}}</p>
                                     <div class="card__texto">
-                                        <p class="card__descricao">{{fotografia.autor}}</p>
+                                        <p class="card__descricao">{{fotografia.especie}}</p>
                                         <!--<span>
                                             <img src="{% static 'assets/ícones/1x/favorite_outline.png' %}" alt="ícone de coração">
                                         </span>-->
