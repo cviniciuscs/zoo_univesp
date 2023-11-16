@@ -27,7 +27,7 @@ def buscar(request):
     if "buscar" in request.GET:
         nome_a_buscar = request.GET['buscar']
         if nome_a_buscar:
-            fotografias = fotografias.filter(nome__icontains = nome_a_buscar)
+            fotografias = fotografias.filter(nome_popular__icontains = nome_a_buscar)
 
     return render(request, 'galeria/index.html', {"cards": fotografias})
 
@@ -55,7 +55,7 @@ def editar_imagem(request, foto_id):
             form = FotografiaForms(request.POST, request.FILES, instance=fotografia)
             if form.is_valid():
                 form.save()
-                messages.success(request, "Livro alterado!")
+                messages.success(request, "Cadastro atualizado!")
                 return redirect('imagem', foto_id)
 
     return render(request, 'galeria/editar_imagem.html', {'form': form, 'foto_id': foto_id})
@@ -67,7 +67,7 @@ def deletar_imagem(request, foto_id):
         messages.success(request, "Deleção feita com sucesso!")
         return redirect('index')
 
-def filtro(request, categoria):
-    fotografias = Livro.objects.order_by('id').filter(publicada=True, categoria=categoria)
+def filtro(request, classe):
+    fotografias = Livro.objects.order_by('id').filter(publicada=True, classe=classe)
     
     return render(request, 'galeria/index.html', {"cards": fotografias})
