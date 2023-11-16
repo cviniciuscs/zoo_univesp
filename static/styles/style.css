@@ -31,9 +31,9 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: Arial, sans-serif;
     min-height: 100vh;
-    background: #f4f4f4;
+    background: #e2dada;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -61,11 +61,11 @@ table {
 }
 
 .banner__imagem {
-    width: 100%;
+    width: 90%;
 }
 
 .banner__titulo {
-    color: #000000;
+    color: #ff1414;
     font-size: 40px;
     width: 350px;
     line-height: 50px;
@@ -75,7 +75,7 @@ table {
 }
 
 .banner__subtitulo {
-    color: #353535;
+    color: #ffffff;
     font-size: 25px;
     width: 900px;
     line-height: 50px;
@@ -94,7 +94,7 @@ table {
 .cabecalho__busca {
     align-items: center;
     border-radius: 10px;
-    background: #e4e4e4;
+    background: #9a9898;
     display: flex;
     height: auto;
     justify-content: space-between;
@@ -113,7 +113,7 @@ table {
 
 .busca__input {
     align-items: center;
-    background-color: transparent;
+    background-color: #ffffff00;
     border: none;
     font-size: 1rem;
     height: 24px;
@@ -132,7 +132,7 @@ table {
 }
 
 .cards__titulo {
-    color: #fff;
+    color: #292929;
     font-size: 2rem;
     line-height: 3rem;
     margin-bottom: 1.5rem;
@@ -148,7 +148,7 @@ table {
 .card {
     border-radius: 10px;
     box-shadow: 0px 10px 10px #00000050;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-bottom: 1.5rem;
     position: relative;
     width: 450px;
@@ -160,7 +160,7 @@ table {
 }
 
 .card__tag {
-    background-color: #0056b3;
+    background-color: #ebb6b6;
     border-radius: 8px;
     border: 2px solid transparent;
     font-size: 1.2rem;
@@ -219,8 +219,8 @@ table {
 }
 
 .imagem__imagem {
-    width: 100%;
-    border-radius: 20px;
+    width: 25%;
+    border-radius: 10px;
 }
 
 .imagem__info {
@@ -236,14 +236,14 @@ table {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    color: #FFFFFF;
+    color: #000000;
     margin-top: 0.5rem;
 }
 
 .imagem__titulo {
     font-weight: bold;
     line-height: 2rem;
-    color: #FFFFFF;
+    color: #000000;
 }
 
 .imagem__texto {
@@ -325,8 +325,8 @@ table {
     align-items: center;
     font-size: 20px;
     text-decoration: none;
-    color: #FFFFFF;
-    background-color: #082D5C;
+    color: #000000;
+    background-color: #e1e1e1;
     width: 100%;
     height: 100%;
     border-radius: 8px;
@@ -349,7 +349,7 @@ table {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    color: #e02a2a;
+    color: #c10404;
 }
 
 .rodape__icones {
@@ -359,14 +359,14 @@ table {
 }
 
 .rodape__texto {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .tags {
     padding: 1.5rem 0;
     display: flex;
     align-items: center;
-    color: #D9D9D9;
+    color: #0176d2;
     font-size: 1.3rem;
 }
 
@@ -379,7 +379,7 @@ table {
 }
 
 .tags__tag {
-    background-color: #e6e6e6e0;
+    background-color: #0176d2cf;
     margin-right: 1.5rem;
     border-radius: 8px;
     padding: .8rem .5rem;
@@ -389,7 +389,7 @@ table {
 }
 
 .tags__tag:hover {
-    border: 2px solid #c2c2c2e0;
+    border: 2px solid #141414e0;
     cursor: pointer;
 }
 
@@ -534,11 +534,11 @@ table {
     height: 1em;
     margin-top: 0.25em;
     vertical-align: top;
-    background-color: #fff;
+    background-color: #ffffff;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    border: 1px solid rgba(0,0,0,.25);
+    border: 1px solid rgb(161 46 46 / 25%);
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
