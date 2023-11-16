@@ -5,20 +5,26 @@ from django.contrib.auth.models import User
 class Livro(models.Model):
 
     OPCAO_CATEGORIA = [
-        ("LITERATURA INFANTIL", "Literatura Infantil"),
-        ("LITERATURA JUVENIL", "Literatura Juvenil"),
-        ("FICÇÃO", "Ficção"),
-        ("AUTOBIOGRAFIA", "Autobiografia"),
+        ("AVE", "Ave"),
+        ("MAMÍFERO", "Mamífero"),
+        ("RÉPTIL", "Réptil"),
+        ("ANFÍBIO", "Anfíbio"),
         ]
 
-    animal = models.CharField(max_length=100, null=False, blank=False)
-    autor = models.CharField(max_length=100, null=False, blank=False, default=None)
-    legenda = models.CharField(max_length=150, null=False, blank=False)
-    categoria = models.CharField(max_length=100, choices=OPCAO_CATEGORIA, default="")
-    descricao = models.TextField(null=False, blank=False)
+    OPCAO_SEXO = [
+        ("MASCULINO", "Masculino"),
+        ("FEMININO", "Feminino"),
+        ("INDETERMINADO", "Indeterminado"),
+        ]
+
+    nome = models.CharField(max_length=100, null=False, blank=False)
+    especie = models.CharField(max_length=100, null=False, blank=False, default=None)
+    nome_popular = models.CharField(max_length=150, null=False, blank=False)
+    classe = models.CharField(max_length=100, choices=OPCAO_CATEGORIA, default="")
+    observação = models.TextField(null=False, blank=False)
     foto = models.ImageField(upload_to='fotos/%Y/%m/%d/', blank=True)
+    sexo = models.CharField(max_length=100, choices=OPCAO_SEXO, default="")
     publicada = models.BooleanField(default=False)
-    emprestado = models.BooleanField(default=False)
     data_fotografia = models.DateTimeField(default=datetime.now, blank=False)
     usuario = models.ForeignKey(
         to=User,

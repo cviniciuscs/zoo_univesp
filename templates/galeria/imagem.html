@@ -11,10 +11,10 @@
                         {% endif %}
                         <div class="imagem__info">
                             <div class="imagem__texto">
-                                <p class="imagem__titulo">{{fotografia.animal}}</p>
-                                <p class="imagem__texto">{{fotografia.autor}}</p>
-                                <p class="imagem__descricao">{{fotografia.legenda}}</p>
-                                <p class="imagem__texto">{{fotografia.descricao}}</p>
+                                <p class="imagem__titulo">{{fotografia.nome}}</p>
+                                <p class="imagem__texto">{{fotografia.nome_popular}}</p>
+                                <p class="imagem__descricao">{{fotografia.especie}}</p>
+                                <p class="imagem__texto">{{fotografia.observação}}</p>
                             </div>
                             <div>
                             {% if user.is_staff %}
